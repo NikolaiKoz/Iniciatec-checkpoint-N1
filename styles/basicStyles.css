@@ -64,6 +64,48 @@ table {
 
 /* ---------->> HEADER <<---------- */
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 4em;
+}
+
+.header__containerFlex {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    max-width: 80px;
+    display: block;
+}
+
+.header__logo__img {
+    width: 100%;
+    
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0 .5em;
+    text-align: center;
+}
+
+.header__containerLinks {
+    display: flex;
+}
+
+.header__links {
+    text-decoration: none;
+    color: var(--white);
+    margin: 0 .5em;
+}
+
+.header__icons {
+    margin: 0 .2em;
+}
+
 /* ---------->> GAMES LOGOS <<---------- */
 
 .gamesLogos{
