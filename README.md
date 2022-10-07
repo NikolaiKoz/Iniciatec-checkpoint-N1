@@ -24,3 +24,11 @@
 -- Ferreyra, Cesar
 -- Rodrigez, Ivan
 -- Vallejos, Jose Luis 5 -
+
+## Monitor
+
+-- 1440px
+
+## Main
+
+- Margin 1 em
