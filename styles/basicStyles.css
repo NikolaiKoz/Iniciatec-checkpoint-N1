@@ -197,3 +197,80 @@ table {
 }
 
 /* ---------->> FOOTER <<---------- */
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer__logo{
+    max-width: 50px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__logo__img{
+    width: 100%;
+}
+
+.footer__title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer__ctnFlex{
+    display: flex;
+}
+.footer__ctnAutors{
+    padding: 0 10px;
+}
+
+.footer__autors{
+    color: var(--white);
+    font-size: 1rem;
+    text-decoration: none;
+    margin: auto 5px;
+}
+
+.footer__horizontalLine{
+    width: 60%;
+    opacity: 40%;
+}
+
+.footer__about{
+    font-size: 1.2rem;
+    margin: 5px 0 10px;
+}
+
+.footer__containerFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__subTitle{
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+
+.footer__ctnIcons{
+    flex-direction: row;
+}
+
+.footer__icons{
+    width: 1.5rem;
+    margin-left: 5px;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid2c{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
