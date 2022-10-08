@@ -1,20 +1,31 @@
+:root{
+    --white: #e2e2e2;
+    --light-gray-blue: #1e242d;
+    --dark-gray-blue: #14181e;
+    --gray: #555e67;
+    --ligth-blue: rgb(0, 165, 199);
+}
+
 .eventsMain {
     max-width: 1440px;
     margin: 1em auto;
 }
 
 .eventsMain__title{
-    background-color: red;
+    font-size: 40px;
+    text-align: center;
 }
 
 .eventsMain__subtitle {
-    background-color: green;
+    font-size: 30px;
 }
 
 .eventsMain__card {
     background-color: blue;
     margin: 1em 0;
-    /* height: 200px; */
+    background-color: var(--gray);
+    padding: 1em;
+    border-radius: 5px;
 }
 
 .eventsMain__card__titleContainer {
@@ -23,34 +34,42 @@
 }
 
 .eventsMain__card__title1 {
+    font-size: 20px;
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: aqua;
+    background-color: var(--dark-gray-blue);
     width: 75%;
+    padding: .5em;
 }
 
 .eventsMain__card__title2 {
-    background-color: aquamarine;
+    font-size: 20px;
+    background-color: var(--dark-gray-blue);
     width: 25%;
+    padding: .5em;
 }
 
 .eventsMain__card__iFrameContainer {
     display: flex;
     flex-direction: row;
+    height: 200px;
 }
 
 .eventsMain__card__video {
-    background-color: rgb(87, 15, 154);
+    background-color: var(--light-gray-blue);
     width: 25%;
 }
 
 .eventsMain__card__description {
-    background-color: rgb(223, 19, 19);
+    background-color: var(--light-gray-blue);
     width: 50%;
+    padding: 1em;
+    text-align: justify;
+    line-height: 25px;
 }
 
 .eventsMain__card__map {
-    background-color: blanchedalmond;
+    background-color: var(--light-gray-blue);
     width: 25%;
     height: 100%;
 }
