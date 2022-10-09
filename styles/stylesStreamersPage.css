@@ -1,0 +1,146 @@
+/* ---------->> MAIN STREAM <<---------- */
+
+.mainStreamers{
+    display: grid;
+    grid-template-rows:1fr 2fr ;
+    
+    width: 100%;
+    background-color: var(--light-gray-blue);
+    text-align: center;
+    padding-bottom: 80px;
+}
+.img_stream{
+    width: 200px;
+
+}
+.title{
+    font-size: 300%;
+    margin: 50px;
+}
+.infostream{
+    margin: 20px;
+}
+/* ---------->> PLATAFORMS <<---------- */
+
+.plataforms{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin: 2%;
+    position:relative;
+    grid-template-rows: 5px;
+    
+}
+.plataforms_id, .img_plataforms, .description_plataforms{
+    width: 400px;
+    grid-template-columns: 5px;
+
+}
+.img_plataforms,.description_plataforms{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;  
+}
+.img_plataforms{
+    z-index: 2;
+    transform: rotateY(0deg);
+    transition: all 0.3s linear;   
+}
+.description_plataforms{
+    transition: all 0.3s linear;
+    transform: rotateY(180deg);
+    background-color: beige;
+    color: blue;
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+}
+.plataforms_id{
+    position: relative;
+   
+}
+.plataforms_id:hover .img_plataforms{
+    transform: rotateY(180deg);
+}
+.plataforms_id:hover .description_plataforms{
+    transform: rotateY(360deg);
+}
+
+.img_plataforms img{
+    width: 400px;
+    font-size: 150px;
+    border-radius: 20px;
+}
+.img_streams{
+    width: 400px;
+}
+/* ---------->> STREAMERS <<---------- */
+.cont_stream{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr;
+    margin: 2%;
+    position:relative;
+}
+.containerStream{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 5px;
+}
+.video_stream{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.description_stream{
+    background-color: rgb(73, 45, 95);
+}
+
+
+.container_stream{
+    position: static;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.plataforms_id{
+    box-shadow: 1px 1px 20px -10px #20202049;
+
+
+}
+.plataforms_id:hover .description_plataforms{
+    margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+.plataforms_id:hover .img_plataforms{
+    margin-top: 0px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.description_plataforms{
+    width: 400px;
+    height: 220px;
+    color: #474747;
+    background: #EFF3F5;
+    padding: 20px;
+    margin-top: -220px;
+    border-radius: 20px;
+}
+*/
+
+
+
