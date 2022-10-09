@@ -14,18 +14,32 @@
 .eventsMain__title{
     font-size: 40px;
     text-align: center;
+    font-weight: 900;
 }
 
 .eventsMain__subtitle {
+    margin: 0 3em;
     font-size: 30px;
+    font-weight: 700;
 }
 
 .eventsMain__card {
     background-color: blue;
-    margin: 1em 0;
+    margin: 3em;
     background-color: var(--gray);
     padding: 1em;
-    border-radius: 5px;
+    border-radius: 15px;
+}
+
+.eventsMain__card:hover{
+    transition: all ease-in-out 0.5s;
+    transform: scale(1.05);
+    box-shadow:
+    0px 0px 5px var(--ligth-blue),
+    0px 0px 8px var(--ligth-blue),
+    0px 0px 11px var(--ligth-blue),
+    0px 0px 14px var(--ligth-blue),
+    0px 0px 17px var(--ligth-blue);
 }
 
 .eventsMain__card__titleContainer {
@@ -40,6 +54,9 @@
     background-color: var(--dark-gray-blue);
     width: 75%;
     padding: .5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .eventsMain__card__title2 {
@@ -47,6 +64,8 @@
     background-color: var(--dark-gray-blue);
     width: 25%;
     padding: .5em;
+    text-align: center;
+    font-weight: 700;
 }
 
 .eventsMain__card__iFrameContainer {
@@ -66,6 +85,7 @@
     padding: 1em;
     text-align: justify;
     line-height: 25px;
+    text-indent: 2em;
 }
 
 .eventsMain__card__map {
