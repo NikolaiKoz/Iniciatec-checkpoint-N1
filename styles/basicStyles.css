@@ -187,6 +187,56 @@ table {
     margin: 2% 0;
 }
 
+.main__title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.main__sctTitle{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.main__cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0 50px;
+}
+.main__cardTitle{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.main__cardsSubtitle{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.main__ctnCardImg{
+    max-width: 200px;
+    display: inline-block;
+    position: relative;
+}
+
+.main__cardImg{
+    width: 200px;
+    border-radius: 5px 5px 0 0;  
+
+    -webkit-mask-image: -webkit-gradient(linear, right 40%, right 100%, from(rgba(0,0,0,1)),to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.main__cardImgLogo{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+}
+
 /* ---------->> FOOTER <<---------- */
 
 .footer{
