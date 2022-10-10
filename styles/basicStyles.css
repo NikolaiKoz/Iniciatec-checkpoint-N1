@@ -224,7 +224,7 @@ table {
 }
 
 .main__cardImg{
-    width: 200px;
+    width: 250px;
     border-radius: 5px 5px 0 0;  
 
     -webkit-mask-image: -webkit-gradient(linear, right 40%, right 100%, from(rgba(0,0,0,1)),to(rgba(0,0,0,0)));
@@ -236,6 +236,32 @@ table {
     left: 0;
     width: 100px;
 }
+
+.main__Iniciatec_ctn{
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px ;
+}
+.main__Iniciatec_ctnCards{
+    width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: var(--dark-gray-blue);
+    border-radius: 5px;
+}
+
+.main__Iniciatec_cardsText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.main__Iniciatec_cardsTitle{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 
 /* ---------->> FOOTER <<---------- */
 
