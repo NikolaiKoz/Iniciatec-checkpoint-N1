@@ -74,6 +74,11 @@
 .img_streams{
     width: 400px;
 }
+.button_plataforms{
+    background-color: rgb(179, 165, 165);
+    border-radius: 5px;
+    margin: 5px;
+}
 /* ---------->> STREAMERS <<---------- */
 .cont_stream{
     display: grid;
@@ -97,6 +102,20 @@
 
 .container_stream{
     position: static;
+    background-color: rgb(36, 93, 143);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.img_streams_best{
+    margin: 6px;
+}
+
+/* ---------->> VIDEOS <<---------- */
+
+.video_stream{
+margin-bottom: 50px;
+
+margin-top: -200px;
 }
 
 
@@ -109,38 +128,6 @@
 
 
 
-
-
-
-
-
-/*
-.plataforms_id{
-    box-shadow: 1px 1px 20px -10px #20202049;
-
-
-}
-.plataforms_id:hover .description_plataforms{
-    margin-top: 0;
-    border-radius: 0px 0px 20px 20px;
-
-}
-
-.plataforms_id:hover .img_plataforms{
-    margin-top: 0px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.description_plataforms{
-    width: 400px;
-    height: 220px;
-    color: #474747;
-    background: #EFF3F5;
-    padding: 20px;
-    margin-top: -220px;
-    border-radius: 20px;
-}
-*/
 
 
 
