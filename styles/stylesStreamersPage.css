@@ -30,6 +30,11 @@
     grid-template-rows: 5px;
     
 }
+.containerStream{
+    margin: 5px;
+    border-radius: 2px;
+    background-color: rgb(80, 62, 62);
+}
 .plataforms_id, .img_plataforms, .description_plataforms{
     width: 400px;
     grid-template-columns: 5px;
@@ -40,6 +45,8 @@
     position: absolute;
     top: 0;
     left: 0;  
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .img_plataforms{
     z-index: 2;
@@ -95,21 +102,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.description_stream{
-    background-color: rgb(73, 45, 95);
-}
+
 
 
 .container_stream{
     position: static;
-    background-color: rgb(36, 93, 143);
     margin-left: 50px;
     margin-right: 50px;
 }
 .img_streams_best{
     margin: 6px;
 }
-
+.description_stream h4{
+    font-size: 30px;
+}
 /* ---------->> VIDEOS <<---------- */
 
 .video_stream{
