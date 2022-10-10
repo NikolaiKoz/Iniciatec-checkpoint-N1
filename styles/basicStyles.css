@@ -262,6 +262,83 @@ table {
     font-weight: 700;
 }
 
+.main__formCtn{
+    max-width: 80%;
+    margin: 0 auto;
+    background: rgb(0,0,0);
+    background: linear-gradient(135deg, #14181e 0%, #233146 67%, #0d1f3a 100%);  
+    background-size: 200%;
+    animation: bg-animation 3s infinite alternate;
+    color: var(--white);
+    border-radius: 15px;
+}
+@keyframes bg-animation{
+    0% {background-position: 0%}
+    100% {background-position: 70%}
+}
+
+.main__contactBox{
+    display: grid;
+	grid-template-columns: 40% 1fr;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.main__formLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.main__formTitle{
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.main__formDescription{
+    line-height: 1.5rem;
+}
+
+.main__formRight{
+    padding: 25px 40px;
+}
+
+.main__formField{
+	width: 100%;
+    color: var(--white);
+	border: 2px solid rgba(158, 158, 158, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.main__formField:hover{
+    border: var(--white);
+    opacity: 70%;
+	background-color: rgba(0, 0, 0, 0.1);
+    color: var(--white);
+}
+
+.main__formTextArea{
+ 	min-height: 100px;
+}
+
+.main__formBtn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-image: linear-gradient(to right, #14181e 0%, #253246  51%, #17325a  100%);
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
 
 /* ---------->> FOOTER <<---------- */
 
