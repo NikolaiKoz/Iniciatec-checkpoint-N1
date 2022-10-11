@@ -308,6 +308,25 @@ table {
     0px 0px 17px var(--ligth-blue);
 }
 
+.main__Iniciatec_iframe{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.main__Iniciatec_ctnImg{
+    display: block;
+    max-width: 250px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+.main__Iniciatec_img{
+    width: 100%;
+    transform: translateY(-5%);
+    background-color: var(--white);
+}
+
 .main__Iniciatec_cardsText{
     display: flex;
     flex-direction: column;
@@ -372,6 +391,7 @@ table {
 	width: 100%;
     color: var(--white);
 	border: 2px solid rgba(158, 158, 158, 0);
+    border-radius: 5px;
 	outline: none;
 	background-color: rgba(230, 230, 230, 0.6);
 	padding: 0.5rem 1rem;
@@ -403,6 +423,32 @@ table {
     cursor: pointer;
 }
 
+.flex{
+    display: flex;
+}
+.grid2c{
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+.grid2c:nth-of-type(2){
+    display: grid;
+    grid-template-columns: 1fr 40%;
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.right{ 
+    text-align: right;
+}
+.inverted{
+    order: 1;
+} 
+.pink{
+    color: rgb(230, 74, 209);
+}
 /* ---------->> FOOTER <<---------- */
 
 .footer{
@@ -473,32 +519,3 @@ table {
     width: 1.5rem;
     margin-left: 5px;
 }
-
-.flex{
-    display: flex;
-}
-
-.grid2c{
-    display: grid;
-    grid-template-columns: 40% 1fr;
-}
-.grid2c:nth-of-type(2){
-    display: grid;
-    grid-template-columns: 1fr 40%;
-}
-
-.center{
-    text-align: center;
-}
-
-.left{
-    text-align: left;
-}
-
-.right{ 
-    text-align: right;
-}
-
-.inverted{
-    order: 1;
-} 
