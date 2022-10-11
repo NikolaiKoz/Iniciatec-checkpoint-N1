@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name              = "Author" lang="en" content="Boujon Juan, Ferreyra Cesar, Rodriguez Ivan, Vallejos Jose Luis">
+    <meta name              = "keywords" content="About us, contact, developers, index">
+    <meta name              = "description" content="Queen´s Elizabeth Revenge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/basicStyles.css">
+    <link rel               = "icon" type="image/png" sizes="32x32" class="head__logo" href="./assets/logo/logo.png">
+    <title>Change the name</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__containerFlex">
+            <picture class="header__logo">
+                <img src="../assets/logo/logo.png" class="header__logo__img" alt="logo">
+            </picture>
+            <h1 class="header__title">Queen's Elizabeth <br> Revenge</h1>
+            <div class="header__containerLinks">
+                <a href="./index.html" class="header__links">About Us</a>
+                <a href="./pages/streamersPage.html" class="header__links">Streamers</a>
+                <a href="./pages/events.html" class="header__links">Events</a>
+            </div>
+        </div>
+        <div class="header__containerFlex">
+            <img class="header__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACLklEQVRIS8VWi1HCQBAlQAHYAJAOsAOtAKlAqECoQKlArEA6kA6gA+kgCQ2YAmDie8wlXi73hRnZmQyf7O3bt9+LWjeS6Ea4rWDgJElGnU5nWBTFkE5HUZSeTqc8juNdCAkvYAH2DMNPeM6ABlnBiQ84kbqcsAIDsAd2rzAyxdNzGZPer/r9/sKmbwQWLL8cDG22mYIJ2O91SlpgAboNZKmznwP8UQfeAGZ4u93uFsUz8ghtDp0NdLNSt91uj5WzZH4PcOpW0gA+HA7veDv3AF3D4EI1mGXZHJVOG7KskfOZERhshyimb1eIYXh/PB4ZwhoLGjYAt+Ak1P+qvcY4gO0MDNYyA9YFHYbjY0PEaqxV4MSnikXB7EpgOPyJ71NHenI4e1fqVMCikhlmp6hhA3CwwxUwDtNjeu4UAN/J+cXZwnkICqj2xWAwWFG3AjYVhc7gfwKnyE/sw8qWbzBegvFbjTEOcAFwROokBJgT78Fgp+oGubjYwyySa4FthTZB5DY1xvwB1j/40G0hDopq26g9LAqTxdPTTK2SCOc2h8h56Kh97NOPnEKXVPUGDk9KL2rAYv+StVUuAG5sqcaS8GmrUGC5mrWMyz9dkygQ2G8tEtx1+wgAZiGxhc6VLIvt6sNNw75u9KQn8A56M9PFz3nL1K1KD2DeNpe6fW3NsRoWEfoX/D/lOwMww7oXtxLtBc8r1KZ+4mhVcyYuAamNoXeOXb187Xtnjq8FMJ3/BSe/ZC5haNaHAAAAAElFTkSuQmCC"/>
+            <img class="header__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACqklEQVRIS+VW7VXiUBAlQAFaABA6wA6wAqGCxQqUCtQKZCtQK1i2AmMFSwcJNGAK4GPvjfM4w+QlL/rHs2dzTg6HJO/dO3fuzLyo9U1X9E24rX8LOE3TMygVi1r5cDjMPqtc44gBNu50OlcAmOEmsL2WePC73+8/NyERBAbgCIB32GziIoyiKDscDi5Kkhg7MLxbbbfba6iwqiNQCyxR/mKE3HC/37/gfsamud10s9mQ2KNLAYjNB4PBogq8ElgifRVZF7vd7sEHaDder9e3IEkCvK6rpPcCAzSGvH8ICuYPYH7fJG/uG1GKpFsgfAnCiV3vBYZsT/hwhnsBxnMuck4O5c4BiPRMU4Y9hkFgkZjRZmB7QXkJ2u12XxH9CM+n2IgODl4AZ9Rjn+SliJGje+ToTkus80aT9Xq9iyDqh0osQYIvQXaq15SAwTLFBzGiRbAfjQHPaJZbt1C/CxHA2nd8c4Y159qcPuCDzYtxaoJNpk0cLqQLuSVtx9o+ARY3p1ZO5hiSkXkrVJ9WAaeWdbcFLgB8eVQuzWWT2s6k3O0q5MSUXmAsymGGcw97t8kJOCuh3W5PfPUOwiypSW3EkpOSuTQBVSJ8zJb4hpuEisFhU6HMGjRX4eC6XFqXG2WOpaPSEy4nZ7AquR2INJob/J8pYA4P9ueiwXyqgZgFwS4ljudkYt4TV2aqBI8dUCtT1atr82xNZ/+rccohwZpP7DclYNerdUkxqqYNQyLlwYGTrXIm+3q1m6cJFr6hTK7wG8up46dvvsrkGmGQPMogyaXXNz8IuLoz0tA0+pxF6YpTCAjFJKbes6XOQ+PT16uL1ohrxYhx1FlyE8nbDzynkexhjyTYyV4Ayu9LR6PaHKtja1a3mCWHjXg7gNrvfWYMnjJDDv7q+/8P+C9AWbYuNuI16wAAAABJRU5ErkJggg=="/>
+            <img class="header__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB+0lEQVRIS+1W23HCQAzEQAFUgKGC0EGggoQOoIJABYEKQiqADuJUgDuAVGAeBcQFwJBdRp74IXNnkwk/3Axjz1mn1UorHU7lRsu5EW7lDvxvmb861UEQNKrV6shxnEdE3cHPP51OX67rTiIWsOnifd1ut8NoLwO82+3mzWZzaEOdoPV6fQkgAiYWAllj38ezi2cIn724QQIYjjq1Wm3FqNOGWiAI8gP7z5eClACmtIFPT2W83W6Zsjd+5IHD4TBEetaa41iQpuRsaHA8HnvwdX4/+4+fYurA+DvlaYZIx2nvYDvA3tyEiu+hgCYIaDUmcENx6MHBO/bPIkF2JsjKqwWwGngGmAoE66XJodQuIyrlnBlYasy24LooGlNgse9DlGqRtk/X2IptAVCa9uNqVsXFzf1+v9L6siBYZE5hQRK/gyMXGDVuSS9rAiuK74FtXzukjkwBp2LZMqWXtJFvDcxWwfx9QspbOFSW+cXpl8eYgyS4ApS17aO2KltmIPd2kpHIWUzWRZfau3EnxmtRRuMDDo0s0RdgO9aUbA0sszsSmU2tZwCdmkAzqZb0tigqudi7lnUOcWaKy39mmZXM7cT7+KVAG/EfhS+p3diC5oqLfYx2GoC1K+KK2irEHtkR5BOAnk1arfu4SORlbY2qLuvYdO4ObMrQn33/AdkQ2B/O0kPCAAAAAElFTkSuQmCC"/>
+            <img class="header__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACnklEQVRIS+VWi1HbQBBFtguAAvyrIKYCTAXYHcQVBFcQUgFQAe4Ad4CpAFOB/CkgKsCfvKfZJXu6k3UeT4bMoBmNdKe7ffv283TJ2SddySfhnv3fwGmaniMyemuQONYrk5es2+0uYqJYyphgtVrtFvfNfr/vCHCMTa6Z4l60Wq1x2YYgMEB7jUbjCYA9ZZIkSc4Ec8rOsYnv5/jGKNDJ/MLcfLPZjBGFWdEBD5hMAfoioLPtdkuvF9gcBAwxgo0+bNyLjQzMLyqBl8vlHTz9yXBhwzA2trpO64G5Xq/XbwI+ga2RteUxXq1Wz1gwANNLbJ4fAwzQTr1ef2M9YH+XTxl7rEPAvwkWCg/nmX8UXB9R+UbDYPS+2+0mZEi2AMr3A/gaj7kZX9h0OcDiccqiaDabl0W2SMOtpMG2Ur4MDvxqt9t3dIxjjRYimGLYKUawCNyT0MzAmB5/XAJ6LxNTMpVKv8LcdwEfA/zB7tM8MwK2uqOAbe5gdASnJtY4qxgOv0iIYf+viIAx5/u4h9jH/s6vIrAacBgbtqWVDoAnMteQK8BJwFrpIbYGYIB3doTj3KnAysbL4T8FjhEVs+bBanQs42BVa5sJO6+4YJxhZlTYv0NbvScB06BhxCGr+hU39Vvbib3tsOVCBa5qp1x5DgiI6rimVp8Zq1kUzPmZGAEp72PxcE8mFZI5gHNkSsV6BeC0TNcBTHtMgdPfnlYbpXEWFinGjCmfVMJQBD1gk0tPNmPA7BpTWJ7wBA8CotcdFhFC9HjM71H+x2T6A/tZ7ZmE2cl92dGH0sn2ILheM3kJnUTyv5Ucf7hH/15cy/b70Gg1dvB4K/rbLzgQE3ECzsF0VHbqjD5Xi0gcBAUQAXk+W1R5Fw1cZejY718P+A9pA8UuVWRauwAAAABJRU5ErkJggg=="/>
+        </div>
+    </header>
+    <div class="gamesLogos">
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/lol.jpg" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/csgo.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/ff.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/fn.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/cod.png" alt="">
+        </div>
+    </div>
+    <main class="main">
+        <h1 class="main__title">About Us</h1>
+        <h2 class="main__sctTitle">We are Queen Elizabeth's Revenge's Team</h2>
+        <div class="main__cards">
+            <!-- José Vallejos's Card -->
+            <div class="main__ctnCards">
+                <picture class="main__ctnCardImg">
+                    <img class="main__cardImg" src="./assets/profilePictures/JoseVallejos.jpg" alt="">
+                    <img class="main__cardImgLogo" src="./assets/logo/iniciatec_logo.png" alt="">
+                    <div class="main__cardInfo">
+                        <p class="left main__cardInfoDescription">Greetings! Im 27 years old, Im from Goya, Corrientes </p>
+                        <p class="left main__cardInfoDescription">I am a student of web development and I have a passion for the front-end. This is the proyect Queen´s Elizabeth Revenge, a simple page about E-Sports.</p>
+                        <div>
+                            <a href="mailto:ivane.rodriguez02@gmail.com"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATVJREFUSEvdVdFRwlAQ3K1AOxA70ArEDrADrACsRKgAOsAOxAqghNCBVLDOZu5lYpjgI5mMM9xPZnL3dm/3Li/EwMGB8XFFBJLGAFYARj1tKwC8ktwap7JIkhN3PcHT8YLkfZNAkX0kue9CJOkBwK4EJsvm6woSwXdI/LiERNIkLL79iyDhLki+5ZBIWgCY1WvPKTDoexR7UC8kreokJLnbDQAviKM620rgRHhp8BsABn9uziVqPgGY5GgS10gqrT5L4ILoznN4iu7mJJeRm9dUfgGYJJXZBMmPhr/reD+N55Kkyaq4mCA69oYY3JY5bMmU5MmmdSIIEu94paDtW+lMkLOu0UjekHMBm3X/qsD7nobYVUA6dyBZ3sr1u8hfo4fY90Y9xIb9vq77ttx2/op+mUNZ9AM2b6YZomtp4AAAAABJRU5ErkJggg=="/></a>
+                            <a target="_blank" href="https://github.com/NikolaiKoz"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1oqHU80Lv7JgNzpvDjM9HHfTY4j9hWeAT/view?usp=sharing"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbpJREFUSEvVVdFtwkAMtYPOEX+MQCcoI5QJSiconQCYoHSCwgSFCUo3oBOUDcoI5QvF6HBldIeSI+TIB1J7Eh/kyHv2e88G4coHr4wPf5Ngu922kyS5TZKkIyJra+1ns9lcl6lRuwNmHgLAMwC0AsAhEU1DkloEWZaNEVHB9UxFZImIdwAwcM9GRDTJk9QiEJHWbrdbAsCEiGYeKMuyHiK+63dr7U1erloEVYljZq18ICIPaZou/G+jBGpoo9G4R8SD5iLyQUSrkMx3ISIvaZqOLyIINM9jqkSj/ANmVskeL+7Av+BA5hpHRGwriOvkWCkz9wHgDQA21tpO1IMA/ClvKDN31GRjjBr7kwNX3niKXM5ftRoR6athLj2aEgU46h+Az4lIOymcgsnO0C8dIkTsGmM0khB4MUNEnVqd4p6XsAxc7woEuTxPiUgn9nh8DMMKw9RUduArDZPgX1L9fdWqv7V2cW4HlcY0p+lJB1VDVnVX5sG3i2FhIh35wBjT1eovJTyZ5MDQiVtoauYhITHNKz3wl2cmeAMA43Bbxjo5u4vcn4oOlX5W+/1+FTO0jCy67GIVxu7/P8EvqGnpGUbXz2QAAAAASUVORK5CYII="/></a>
+                        </div>
+                    </div>
+                </picture>
+                <h3 class="main__cardTitle">José Luis Vallejos</h3>
+                <h4 class="main__cardsSubtitle">Front-end Developer</h4>
+            </div>
+            <!-- Juan Boujon's Card -->
+            <div class="main__ctnCards">
+                <picture class="main__ctnCardImg">
+                    <img class="main__cardImg" src="./assets/profilePictures/JuanBoujon.jpg" alt="">
+                    <img class="main__cardImgLogo" src="./assets/logo/iniciatec_logo.png" alt="">
+                    <div class="main__cardInfo">
+                        <p class="left main__cardInfoDescription">Hi everyone! A Front-End developer here!</p>
+                        <p class="left main__cardInfoDescription"> I'm an introvert and easygoing person with some knowledge of html, css and javascript! Checkout my GitHub to see my projects!</p>
+                        <div>
+                            <a href="mailto:juan_nacho_92@hotmail.com"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATVJREFUSEvdVdFRwlAQ3K1AOxA70ArEDrADrACsRKgAOsAOxAqghNCBVLDOZu5lYpjgI5mMM9xPZnL3dm/3Li/EwMGB8XFFBJLGAFYARj1tKwC8ktwap7JIkhN3PcHT8YLkfZNAkX0kue9CJOkBwK4EJsvm6woSwXdI/LiERNIkLL79iyDhLki+5ZBIWgCY1WvPKTDoexR7UC8kreokJLnbDQAviKM620rgRHhp8BsABn9uziVqPgGY5GgS10gqrT5L4ILoznN4iu7mJJeRm9dUfgGYJJXZBMmPhr/reD+N55Kkyaq4mCA69oYY3JY5bMmU5MmmdSIIEu94paDtW+lMkLOu0UjekHMBm3X/qsD7nobYVUA6dyBZ3sr1u8hfo4fY90Y9xIb9vq77ttx2/op+mUNZ9AM2b6YZomtp4AAAAABJRU5ErkJggg=="/></a>
+                            <a target="_blank" href="https://github.com/Juan2805"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1oqHU80Lv7JgNzpvDjM9HHfTY4j9hWeAT/view?usp=sharing"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbpJREFUSEvVVdFtwkAMtYPOEX+MQCcoI5QJSiconQCYoHSCwgSFCUo3oBOUDcoI5QvF6HBldIeSI+TIB1J7Eh/kyHv2e88G4coHr4wPf5Ngu922kyS5TZKkIyJra+1ns9lcl6lRuwNmHgLAMwC0AsAhEU1DkloEWZaNEVHB9UxFZImIdwAwcM9GRDTJk9QiEJHWbrdbAsCEiGYeKMuyHiK+63dr7U1erloEVYljZq18ICIPaZou/G+jBGpoo9G4R8SD5iLyQUSrkMx3ISIvaZqOLyIINM9jqkSj/ANmVskeL+7Av+BA5hpHRGwriOvkWCkz9wHgDQA21tpO1IMA/ClvKDN31GRjjBr7kwNX3niKXM5ftRoR6athLj2aEgU46h+Az4lIOymcgsnO0C8dIkTsGmM0khB4MUNEnVqd4p6XsAxc7woEuTxPiUgn9nh8DMMKw9RUduArDZPgX1L9fdWqv7V2cW4HlcY0p+lJB1VDVnVX5sG3i2FhIh35wBjT1eovJTyZ5MDQiVtoauYhITHNKz3wl2cmeAMA43Bbxjo5u4vcn4oOlX5W+/1+FTO0jCy67GIVxu7/P8EvqGnpGUbXz2QAAAAASUVORK5CYII="/></a>
+                        </div>
+                    </div>
+                </picture>
+                <h3 class="main__cardTitle">Juan Boujon</h3>
+                <h4 class="main__cardsSubtitle">Front-end Developer</h4>
+
+            </div>
+            <!-- Cesar Ferreyra's Card -->
+            <div class="main__ctnCards">
+                <picture class="main__ctnCardImg">
+                    <img class="main__cardImg" src="./assets/profilePictures/CesarFerreyra.jpg" alt="">
+                    <img class="main__cardImgLogo" src="./assets/logo/iniciatec_logo.png" alt="">
+                    <div class="main__cardInfo">
+                        <p class="left main__cardInfoDescription">Hi! </p>
+                        <p class="left main__cardInfoDescription">I am a web developer and systems analyst. I am passionate about technology and everything related to it.
+                        </p>
+                        <p class="left main__cardInfoDescription">Learn more about me on my github</p>
+
+                        <div>
+                            <a href="mailto:ferreyravadnalcesar@gmail.com"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATVJREFUSEvdVdFRwlAQ3K1AOxA70ArEDrADrACsRKgAOsAOxAqghNCBVLDOZu5lYpjgI5mMM9xPZnL3dm/3Li/EwMGB8XFFBJLGAFYARj1tKwC8ktwap7JIkhN3PcHT8YLkfZNAkX0kue9CJOkBwK4EJsvm6woSwXdI/LiERNIkLL79iyDhLki+5ZBIWgCY1WvPKTDoexR7UC8kreokJLnbDQAviKM620rgRHhp8BsABn9uziVqPgGY5GgS10gqrT5L4ILoznN4iu7mJJeRm9dUfgGYJJXZBMmPhr/reD+N55Kkyaq4mCA69oYY3JY5bMmU5MmmdSIIEu94paDtW+lMkLOu0UjekHMBm3X/qsD7nobYVUA6dyBZ3sr1u8hfo4fY90Y9xIb9vq77ttx2/op+mUNZ9AM2b6YZomtp4AAAAABJRU5ErkJggg=="/></a>
+                            <a target="_blank" href="https://github.com/CesarFerrey"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1oqHU80Lv7JgNzpvDjM9HHfTY4j9hWeAT/view?usp=sharing"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbpJREFUSEvVVdFtwkAMtYPOEX+MQCcoI5QJSiconQCYoHSCwgSFCUo3oBOUDcoI5QvF6HBldIeSI+TIB1J7Eh/kyHv2e88G4coHr4wPf5Ngu922kyS5TZKkIyJra+1ns9lcl6lRuwNmHgLAMwC0AsAhEU1DkloEWZaNEVHB9UxFZImIdwAwcM9GRDTJk9QiEJHWbrdbAsCEiGYeKMuyHiK+63dr7U1erloEVYljZq18ICIPaZou/G+jBGpoo9G4R8SD5iLyQUSrkMx3ISIvaZqOLyIINM9jqkSj/ANmVskeL+7Av+BA5hpHRGwriOvkWCkz9wHgDQA21tpO1IMA/ClvKDN31GRjjBr7kwNX3niKXM5ftRoR6athLj2aEgU46h+Az4lIOymcgsnO0C8dIkTsGmM0khB4MUNEnVqd4p6XsAxc7woEuTxPiUgn9nh8DMMKw9RUduArDZPgX1L9fdWqv7V2cW4HlcY0p+lJB1VDVnVX5sG3i2FhIh35wBjT1eovJTyZ5MDQiVtoauYhITHNKz3wl2cmeAMA43Bbxjo5u4vcn4oOlX5W+/1+FTO0jCy67GIVxu7/P8EvqGnpGUbXz2QAAAAASUVORK5CYII="/></a>
+                        </div>
+                    </div>
+                </picture>
+                <h3 class="main__cardTitle">César Ferreyra</h3>
+                <h4 class="main__cardsSubtitle">Front-end Developer</h4>
+            </div>
+            <!-- Ivan Rodriguez's Card -->
+            <div class="main__ctnCards">
+                <picture class="main__ctnCardImg">
+                    <img class="main__cardImg" src="./assets/profilePictures/ivanRodriguez.jpg" alt="">
+                    <img class="main__cardImgLogo" src="./assets/logo/iniciatec_logo.png" alt="">
+                    <div class="main__cardInfo">
+                        <p class="left main__cardInfoDescription">Hello!</p>
+                        <p class="left main__cardInfoDescription">I'm 20 years old. I live in Pilar, Buenos Aires </p>
+                        <p class="left main__cardInfoDescription">Actually I'm a technical programming student at the UTN. I love technology and also looking for my first job in the IT sector as Front-End Developer</p>
+                        <div>
+                            <a href="mailto:ivane.rodriguez02@gmail.com"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATVJREFUSEvdVdFRwlAQ3K1AOxA70ArEDrADrACsRKgAOsAOxAqghNCBVLDOZu5lYpjgI5mMM9xPZnL3dm/3Li/EwMGB8XFFBJLGAFYARj1tKwC8ktwap7JIkhN3PcHT8YLkfZNAkX0kue9CJOkBwK4EJsvm6woSwXdI/LiERNIkLL79iyDhLki+5ZBIWgCY1WvPKTDoexR7UC8kreokJLnbDQAviKM620rgRHhp8BsABn9uziVqPgGY5GgS10gqrT5L4ILoznN4iu7mJJeRm9dUfgGYJJXZBMmPhr/reD+N55Kkyaq4mCA69oYY3JY5bMmU5MmmdSIIEu94paDtW+lMkLOu0UjekHMBm3X/qsD7nobYVUA6dyBZ3sr1u8hfo4fY90Y9xIb9vq77ttx2/op+mUNZ9AM2b6YZomtp4AAAAABJRU5ErkJggg=="/></a>
+                            <a target="_blank" href="https://github.com/Axfroy"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1mPr2R4jZsMDOVWQ_A87m24-c1grB9GCF/view?usp=sharing"><img class="main__cardInfoIcons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbpJREFUSEvVVdFtwkAMtYPOEX+MQCcoI5QJSiconQCYoHSCwgSFCUo3oBOUDcoI5QvF6HBldIeSI+TIB1J7Eh/kyHv2e88G4coHr4wPf5Ngu922kyS5TZKkIyJra+1ns9lcl6lRuwNmHgLAMwC0AsAhEU1DkloEWZaNEVHB9UxFZImIdwAwcM9GRDTJk9QiEJHWbrdbAsCEiGYeKMuyHiK+63dr7U1erloEVYljZq18ICIPaZou/G+jBGpoo9G4R8SD5iLyQUSrkMx3ISIvaZqOLyIINM9jqkSj/ANmVskeL+7Av+BA5hpHRGwriOvkWCkz9wHgDQA21tpO1IMA/ClvKDN31GRjjBr7kwNX3niKXM5ftRoR6athLj2aEgU46h+Az4lIOymcgsnO0C8dIkTsGmM0khB4MUNEnVqd4p6XsAxc7woEuTxPiUgn9nh8DMMKw9RUduArDZPgX1L9fdWqv7V2cW4HlcY0p+lJB1VDVnVX5sG3i2FhIh35wBjT1eovJTyZ5MDQiVtoauYhITHNKz3wl2cmeAMA43Bbxjo5u4vcn4oOlX5W+/1+FTO0jCy67GIVxu7/P8EvqGnpGUbXz2QAAAAASUVORK5CYII="/></a>
+                        </div>
+                    </div>
+                </picture>
+                <h3 class="main__cardTitle" >Ivan Rodriguez</h3>
+                <h4 class="main__cardsSubtitle">Front-end Developer</h4>
+            </div>
+        </div>
+        <!-- About Iniciatec -->
+        <div class="main__Iniciatec_ctn">
+            <h2 class="main__sctTitle">"Inicia<span class="pink">Tec</span>, tu camino al futuro"</h2>
+            <div class="main__Iniciatec_ctnCards grid2c">
+                <div class="main__Iniciatec_cardsText">
+                    <iframe class="main__Iniciatec_iframe"  src="https://www.youtube.com/embed/AHcdrNQLbtM" title="Iniciatec | Accenture" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="main__Iniciatec_cardsText">
+                    <h3 class="main__Iniciatec_cardsTitle">What is Iniciatec?</h3>
+                    <p class="left main__Iniciatec_cardsP">IniciaTec is a training program, sponsored by Accenture Argentina, whose objective is the development of technical and socio-emotional skills aligned to the digital economy working together with Eidos and MindHub.</p>
+                    <p class="left main__Iniciatec_cardsP">Also empowering passionate people in an environment that emulates an agile, innovative and collaborative system. Providing grat skills for the current work environment.</p>
+                </div>
+            </div>
+            <div class="main__Iniciatec_ctnCards grid2c">
+                <div class="main__Iniciatec_ctnImg inverted">
+                    <img class="main__Iniciatec_img" src="./assets/logo/iniciatec_logo.png" alt="Iniciatec_logo">
+                </div>
+                <div class="main__Iniciatec_cardsText">
+                    <h3 class="main__Iniciatec_cardsTitle">What technologies do We use?</h3>
+                    <p class="left main__Iniciatec_cardsP">implementar Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit delectus asperiores eius voluptas soluta consequuntur numquam in laborum? Autem, aspernatur.</p>
+                </div>
+            </div>
+            <div class="main__Iniciatec_ctnCards grid2c">
+                <div class="main__Iniciatec_ctnImg">
+                    <img class="main__Iniciatec_img" src="./assets/logo/AccentureEmpresas.png" alt="">
+                </div>
+                <div class="main__Iniciatec_cardsText">
+                    <h3 class="main__Iniciatec_cardsTitle">What methodology do We implement?</h3>
+                    <p class="left main__Iniciatec_cardsP">Utilizamos Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit delectus asperiores eius voluptas soluta consequuntur numquam in laborum? Autem, aspernatur.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Forms -->
+        <div class="main__formCtn">
+            <h3 class="main__formTitle">Contact Us</h3>
+            <hr class="footer__horizontalLine">
+            <div class="main__contactBox">
+                <div class="main__formLeft">
+                    <p class="main__formDescription left main__Iniciatec_cardsP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis esse vero nihil sit rerum nulla mollitia quasi vel eos accusantium molestias sapiente aperiam non, quos modi maiores quis cum maxime.</p>
+                </div>
+                <div class="main__formRight">
+                    <input type="text" class="main__formField" placeholder="Your Name">
+                    <input type="text" class="main__formField" placeholder="Your Email">
+                    <input type="text" class="main__formField" placeholder="Phone">
+                    <textarea placeholder="Message" class="main__formField main__formTextArea"></textarea>
+                    <button class="main__formBtn">Send</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="gamesLogos">
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/ow.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/cr.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/fifa.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/vt.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/rs.png" alt="">
+        </div>
+    </div>
+    <footer class="footer">
+        <picture class="footer__logo">
+            <img src="./assets/logo/logo.png" class="footer__logo__img" alt="logo">
+        </picture>
+        <h3 class="footer__title">Queen's Elizabeth Revenge</h3>
+        <div class="footer__ctnFlex">
+                <div class="footer__ctnAutors flex">
+                    <a target="_blank" href="https://github.com/NikolaiKoz"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                    <a class="footer__autors" target="_blank" href="https://github.com/NikolaiKoz">José Vallejos</a>
+                </div>
+                <div class="footer__ctnAutors flex">
+                    <a target="_blank" href="https://github.com/Juan2805"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                    <a class="footer__autors" target="_blank" href="https://github.com/Juan2805">Juan Boujon</a>
+                </div>
+                <div class="footer__ctnAutors flex">
+                    <a target="_blank" href="https://github.com/CesarFerrey"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                    <a target="_blank" class="footer__autors" href="https://github.com/CesarFerrey">Cesar Ferreyra</a>
+                </div>
+                <div class="footer__ctnAutors flex">
+                    <a target="_blank" href="https://github.com/Axfroy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                    <a target="_blank" class="footer__autors" href="https://github.com/Axfroy">Ivan Rodriguez</a>
+                </div>
+        </div>
+        <hr class="footer__horizontalLine">
+        <div class="footer__about">
+            <p>
+                Thanks you so much ¿
+            </p>
+        </div>
+        <div class="footer__containerFlex">
+            <h3 class="footer__subTitle">Follow Us</h3>
+            <div class="footer__ctnIcons flex">
+                <img class="footer__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACLklEQVRIS8VWi1HCQBAlQAHYAJAOsAOtAKlAqECoQKlArEA6kA6gA+kgCQ2YAmDie8wlXi73hRnZmQyf7O3bt9+LWjeS6Ea4rWDgJElGnU5nWBTFkE5HUZSeTqc8juNdCAkvYAH2DMNPeM6ABlnBiQ84kbqcsAIDsAd2rzAyxdNzGZPer/r9/sKmbwQWLL8cDG22mYIJ2O91SlpgAboNZKmznwP8UQfeAGZ4u93uFsUz8ghtDp0NdLNSt91uj5WzZH4PcOpW0gA+HA7veDv3AF3D4EI1mGXZHJVOG7KskfOZERhshyimb1eIYXh/PB4ZwhoLGjYAt+Ak1P+qvcY4gO0MDNYyA9YFHYbjY0PEaqxV4MSnikXB7EpgOPyJ71NHenI4e1fqVMCikhlmp6hhA3CwwxUwDtNjeu4UAN/J+cXZwnkICqj2xWAwWFG3AjYVhc7gfwKnyE/sw8qWbzBegvFbjTEOcAFwROokBJgT78Fgp+oGubjYwyySa4FthTZB5DY1xvwB1j/40G0hDopq26g9LAqTxdPTTK2SCOc2h8h56Kh97NOPnEKXVPUGDk9KL2rAYv+StVUuAG5sqcaS8GmrUGC5mrWMyz9dkygQ2G8tEtx1+wgAZiGxhc6VLIvt6sNNw75u9KQn8A56M9PFz3nL1K1KD2DeNpe6fW3NsRoWEfoX/D/lOwMww7oXtxLtBc8r1KZ+4mhVcyYuAamNoXeOXb187Xtnjq8FMJ3/BSe/ZC5haNaHAAAAAElFTkSuQmCC"/>
+                <img class="footer__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACqklEQVRIS+VW7VXiUBAlQAFaABA6wA6wAqGCxQqUCtQKZCtQK1i2AmMFSwcJNGAK4GPvjfM4w+QlL/rHs2dzTg6HJO/dO3fuzLyo9U1X9E24rX8LOE3TMygVi1r5cDjMPqtc44gBNu50OlcAmOEmsL2WePC73+8/NyERBAbgCIB32GziIoyiKDscDi5Kkhg7MLxbbbfba6iwqiNQCyxR/mKE3HC/37/gfsamud10s9mQ2KNLAYjNB4PBogq8ElgifRVZF7vd7sEHaDder9e3IEkCvK6rpPcCAzSGvH8ICuYPYH7fJG/uG1GKpFsgfAnCiV3vBYZsT/hwhnsBxnMuck4O5c4BiPRMU4Y9hkFgkZjRZmB7QXkJ2u12XxH9CM+n2IgODl4AZ9Rjn+SliJGje+ToTkus80aT9Xq9iyDqh0osQYIvQXaq15SAwTLFBzGiRbAfjQHPaJZbt1C/CxHA2nd8c4Y159qcPuCDzYtxaoJNpk0cLqQLuSVtx9o+ARY3p1ZO5hiSkXkrVJ9WAaeWdbcFLgB8eVQuzWWT2s6k3O0q5MSUXmAsymGGcw97t8kJOCuh3W5PfPUOwiypSW3EkpOSuTQBVSJ8zJb4hpuEisFhU6HMGjRX4eC6XFqXG2WOpaPSEy4nZ7AquR2INJob/J8pYA4P9ueiwXyqgZgFwS4ljudkYt4TV2aqBI8dUCtT1atr82xNZ/+rccohwZpP7DclYNerdUkxqqYNQyLlwYGTrXIm+3q1m6cJFr6hTK7wG8up46dvvsrkGmGQPMogyaXXNz8IuLoz0tA0+pxF6YpTCAjFJKbes6XOQ+PT16uL1ohrxYhx1FlyE8nbDzynkexhjyTYyV4Ayu9LR6PaHKtja1a3mCWHjXg7gNrvfWYMnjJDDv7q+/8P+C9AWbYuNuI16wAAAABJRU5ErkJggg=="/>
+                <img class="footer__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB+0lEQVRIS+1W23HCQAzEQAFUgKGC0EGggoQOoIJABYEKQiqADuJUgDuAVGAeBcQFwJBdRp74IXNnkwk/3Axjz1mn1UorHU7lRsu5EW7lDvxvmb861UEQNKrV6shxnEdE3cHPP51OX67rTiIWsOnifd1ut8NoLwO82+3mzWZzaEOdoPV6fQkgAiYWAllj38ezi2cIn724QQIYjjq1Wm3FqNOGWiAI8gP7z5eClACmtIFPT2W83W6Zsjd+5IHD4TBEetaa41iQpuRsaHA8HnvwdX4/+4+fYurA+DvlaYZIx2nvYDvA3tyEiu+hgCYIaDUmcENx6MHBO/bPIkF2JsjKqwWwGngGmAoE66XJodQuIyrlnBlYasy24LooGlNgse9DlGqRtk/X2IptAVCa9uNqVsXFzf1+v9L6siBYZE5hQRK/gyMXGDVuSS9rAiuK74FtXzukjkwBp2LZMqWXtJFvDcxWwfx9QspbOFSW+cXpl8eYgyS4ApS17aO2KltmIPd2kpHIWUzWRZfau3EnxmtRRuMDDo0s0RdgO9aUbA0sszsSmU2tZwCdmkAzqZb0tigqudi7lnUOcWaKy39mmZXM7cT7+KVAG/EfhS+p3diC5oqLfYx2GoC1K+KK2irEHtkR5BOAnk1arfu4SORlbY2qLuvYdO4ObMrQn33/AdkQ2B/O0kPCAAAAAElFTkSuQmCC"/>
+                <img class="footer__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACnklEQVRIS+VWi1HbQBBFtguAAvyrIKYCTAXYHcQVBFcQUgFQAe4Ad4CpAFOB/CkgKsCfvKfZJXu6k3UeT4bMoBmNdKe7ffv283TJ2SddySfhnv3fwGmaniMyemuQONYrk5es2+0uYqJYyphgtVrtFvfNfr/vCHCMTa6Z4l60Wq1x2YYgMEB7jUbjCYA9ZZIkSc4Ec8rOsYnv5/jGKNDJ/MLcfLPZjBGFWdEBD5hMAfoioLPtdkuvF9gcBAwxgo0+bNyLjQzMLyqBl8vlHTz9yXBhwzA2trpO64G5Xq/XbwI+ga2RteUxXq1Wz1gwANNLbJ4fAwzQTr1ef2M9YH+XTxl7rEPAvwkWCg/nmX8UXB9R+UbDYPS+2+0mZEi2AMr3A/gaj7kZX9h0OcDiccqiaDabl0W2SMOtpMG2Ur4MDvxqt9t3dIxjjRYimGLYKUawCNyT0MzAmB5/XAJ6LxNTMpVKv8LcdwEfA/zB7tM8MwK2uqOAbe5gdASnJtY4qxgOv0iIYf+viIAx5/u4h9jH/s6vIrAacBgbtqWVDoAnMteQK8BJwFrpIbYGYIB3doTj3KnAysbL4T8FjhEVs+bBanQs42BVa5sJO6+4YJxhZlTYv0NbvScB06BhxCGr+hU39Vvbib3tsOVCBa5qp1x5DgiI6rimVp8Zq1kUzPmZGAEp72PxcE8mFZI5gHNkSsV6BeC0TNcBTHtMgdPfnlYbpXEWFinGjCmfVMJQBD1gk0tPNmPA7BpTWJ7wBA8CotcdFhFC9HjM71H+x2T6A/tZ7ZmE2cl92dGH0sn2ILheM3kJnUTyv5Ucf7hH/15cy/b70Gg1dvB4K/rbLzgQE3ECzsF0VHbqjD5Xi0gcBAUQAXk+W1R5Fw1cZejY718P+A9pA8UuVWRauwAAAABJRU5ErkJggg=="/>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
