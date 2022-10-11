@@ -20,10 +20,10 @@
 
 ## Works hours
 
--- Boujon, Juan
--- Ferreyra, Cesar
--- Rodrigez, Ivan
--- Vallejos, Jose Luis 5 -
+-- Boujon, Juan 15
+-- Ferreyra, Cesar 15
+-- Rodrigez, Ivan 13
+-- Vallejos, Jose Luis 15
 
 ## Monitor
 
