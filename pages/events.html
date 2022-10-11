@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Author" lang="en" content="Boujon Juan, Ferreyra Cesar, Rodriguez Ivan, Vallejos Jose Luis">
+    <meta name="keywords" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">
+    <meta name="description" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/basicStyles.css">
+    <link rel="stylesheet" href="../styles/events.css">
+    <link rel="icon" type="image/png" sizes="32x32" class="head__logo" href="../assets/logo/logo.png">
+    <title>Events</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__containerFlex">
+            <picture class="header__logo">
+                <img src="../assets/logo/logo.png" class="header__logo__img" alt="logo">
+            </picture>
+            <h1 class="header__title">Queen's Elizabeth <br> Revenge</h1>
+            <div class="header__containerLinks">
+                <a href="#" class="header__links">About Us</a>
+                <a href="#" class="header__links">link 1</a>
+                <a href="#" class="header__links">Links 2</a>
+            </div>
+        </div>
+        <div class="header__containerFlex">
+            <img class="header__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACLklEQVRIS8VWi1HCQBAlQAHYAJAOsAOtAKlAqECoQKlArEA6kA6gA+kgCQ2YAmDie8wlXi73hRnZmQyf7O3bt9+LWjeS6Ea4rWDgJElGnU5nWBTFkE5HUZSeTqc8juNdCAkvYAH2DMNPeM6ABlnBiQ84kbqcsAIDsAd2rzAyxdNzGZPer/r9/sKmbwQWLL8cDG22mYIJ2O91SlpgAboNZKmznwP8UQfeAGZ4u93uFsUz8ghtDp0NdLNSt91uj5WzZH4PcOpW0gA+HA7veDv3AF3D4EI1mGXZHJVOG7KskfOZERhshyimb1eIYXh/PB4ZwhoLGjYAt+Ak1P+qvcY4gO0MDNYyA9YFHYbjY0PEaqxV4MSnikXB7EpgOPyJ71NHenI4e1fqVMCikhlmp6hhA3CwwxUwDtNjeu4UAN/J+cXZwnkICqj2xWAwWFG3AjYVhc7gfwKnyE/sw8qWbzBegvFbjTEOcAFwROokBJgT78Fgp+oGubjYwyySa4FthTZB5DY1xvwB1j/40G0hDopq26g9LAqTxdPTTK2SCOc2h8h56Kh97NOPnEKXVPUGDk9KL2rAYv+StVUuAG5sqcaS8GmrUGC5mrWMyz9dkygQ2G8tEtx1+wgAZiGxhc6VLIvt6sNNw75u9KQn8A56M9PFz3nL1K1KD2DeNpe6fW3NsRoWEfoX/D/lOwMww7oXtxLtBc8r1KZ+4mhVcyYuAamNoXeOXb187Xtnjq8FMJ3/BSe/ZC5haNaHAAAAAElFTkSuQmCC"/>
+            <img class="header__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACqklEQVRIS+VW7VXiUBAlQAFaABA6wA6wAqGCxQqUCtQKZCtQK1i2AmMFSwcJNGAK4GPvjfM4w+QlL/rHs2dzTg6HJO/dO3fuzLyo9U1X9E24rX8LOE3TMygVi1r5cDjMPqtc44gBNu50OlcAmOEmsL2WePC73+8/NyERBAbgCIB32GziIoyiKDscDi5Kkhg7MLxbbbfba6iwqiNQCyxR/mKE3HC/37/gfsamud10s9mQ2KNLAYjNB4PBogq8ElgifRVZF7vd7sEHaDder9e3IEkCvK6rpPcCAzSGvH8ICuYPYH7fJG/uG1GKpFsgfAnCiV3vBYZsT/hwhnsBxnMuck4O5c4BiPRMU4Y9hkFgkZjRZmB7QXkJ2u12XxH9CM+n2IgODl4AZ9Rjn+SliJGje+ToTkus80aT9Xq9iyDqh0osQYIvQXaq15SAwTLFBzGiRbAfjQHPaJZbt1C/CxHA2nd8c4Y159qcPuCDzYtxaoJNpk0cLqQLuSVtx9o+ARY3p1ZO5hiSkXkrVJ9WAaeWdbcFLgB8eVQuzWWT2s6k3O0q5MSUXmAsymGGcw97t8kJOCuh3W5PfPUOwiypSW3EkpOSuTQBVSJ8zJb4hpuEisFhU6HMGjRX4eC6XFqXG2WOpaPSEy4nZ7AquR2INJob/J8pYA4P9ueiwXyqgZgFwS4ljudkYt4TV2aqBI8dUCtT1atr82xNZ/+rccohwZpP7DclYNerdUkxqqYNQyLlwYGTrXIm+3q1m6cJFr6hTK7wG8up46dvvsrkGmGQPMogyaXXNz8IuLoz0tA0+pxF6YpTCAjFJKbes6XOQ+PT16uL1ohrxYhx1FlyE8nbDzynkexhjyTYyV4Ayu9LR6PaHKtja1a3mCWHjXg7gNrvfWYMnjJDDv7q+/8P+C9AWbYuNuI16wAAAABJRU5ErkJggg=="/>
+            <img class="header__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB+0lEQVRIS+1W23HCQAzEQAFUgKGC0EGggoQOoIJABYEKQiqADuJUgDuAVGAeBcQFwJBdRp74IXNnkwk/3Axjz1mn1UorHU7lRsu5EW7lDvxvmb861UEQNKrV6shxnEdE3cHPP51OX67rTiIWsOnifd1ut8NoLwO82+3mzWZzaEOdoPV6fQkgAiYWAllj38ezi2cIn724QQIYjjq1Wm3FqNOGWiAI8gP7z5eClACmtIFPT2W83W6Zsjd+5IHD4TBEetaa41iQpuRsaHA8HnvwdX4/+4+fYurA+DvlaYZIx2nvYDvA3tyEiu+hgCYIaDUmcENx6MHBO/bPIkF2JsjKqwWwGngGmAoE66XJodQuIyrlnBlYasy24LooGlNgse9DlGqRtk/X2IptAVCa9uNqVsXFzf1+v9L6siBYZE5hQRK/gyMXGDVuSS9rAiuK74FtXzukjkwBp2LZMqWXtJFvDcxWwfx9QspbOFSW+cXpl8eYgyS4ApS17aO2KltmIPd2kpHIWUzWRZfau3EnxmtRRuMDDo0s0RdgO9aUbA0sszsSmU2tZwCdmkAzqZb0tigqudi7lnUOcWaKy39mmZXM7cT7+KVAG/EfhS+p3diC5oqLfYx2GoC1K+KK2irEHtkR5BOAnk1arfu4SORlbY2qLuvYdO4ObMrQn33/AdkQ2B/O0kPCAAAAAElFTkSuQmCC"/>
+            <img class="header__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACnklEQVRIS+VWi1HbQBBFtguAAvyrIKYCTAXYHcQVBFcQUgFQAe4Ad4CpAFOB/CkgKsCfvKfZJXu6k3UeT4bMoBmNdKe7ffv283TJ2SddySfhnv3fwGmaniMyemuQONYrk5es2+0uYqJYyphgtVrtFvfNfr/vCHCMTa6Z4l60Wq1x2YYgMEB7jUbjCYA9ZZIkSc4Ec8rOsYnv5/jGKNDJ/MLcfLPZjBGFWdEBD5hMAfoioLPtdkuvF9gcBAwxgo0+bNyLjQzMLyqBl8vlHTz9yXBhwzA2trpO64G5Xq/XbwI+ga2RteUxXq1Wz1gwANNLbJ4fAwzQTr1ef2M9YH+XTxl7rEPAvwkWCg/nmX8UXB9R+UbDYPS+2+0mZEi2AMr3A/gaj7kZX9h0OcDiccqiaDabl0W2SMOtpMG2Ur4MDvxqt9t3dIxjjRYimGLYKUawCNyT0MzAmB5/XAJ6LxNTMpVKv8LcdwEfA/zB7tM8MwK2uqOAbe5gdASnJtY4qxgOv0iIYf+viIAx5/u4h9jH/s6vIrAacBgbtqWVDoAnMteQK8BJwFrpIbYGYIB3doTj3KnAysbL4T8FjhEVs+bBanQs42BVa5sJO6+4YJxhZlTYv0NbvScB06BhxCGr+hU39Vvbib3tsOVCBa5qp1x5DgiI6rimVp8Zq1kUzPmZGAEp72PxcE8mFZI5gHNkSsV6BeC0TNcBTHtMgdPfnlYbpXEWFinGjCmfVMJQBD1gk0tPNmPA7BpTWJ7wBA8CotcdFhFC9HjM71H+x2T6A/tZ7ZmE2cl92dGH0sn2ILheM3kJnUTyv5Ucf7hH/15cy/b70Gg1dvB4K/rbLzgQE3ECzsF0VHbqjD5Xi0gcBAUQAXk+W1R5Fw1cZejY718P+A9pA8UuVWRauwAAAABJRU5ErkJggg=="/>
+        </div>
+    </header>
+    <div class="gamesLogos">
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/lol.jpg" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/csgo.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/ff.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/fn.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/cod.png" alt="">
+        </div>
+    </div>
+
+    <Main class="eventsMain">
+        <h1 class="eventsMain__title">Events</h1>
+        <h2 class="eventsMain__subtitle">Next Events</h2>
+        <div class="eventsMain__card">
+            <div class="eventsMain__card__titleContainer">
+                <h3 class="eventsMain__card__title1">Flow GAMERGY Argentina 2022</h3>
+                <h3 class="eventsMain__card__title2">Where?</h3>
+            </div>
+            <div class="eventsMain__card__iFrameContainer">
+                <iframe  class="eventsMain__card__video" src="https://www.youtube.com/embed/uo5t4yoTRzM" title="Flow GAMERGY Argentina 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="eventsMain__card__description">The largest video game and electronic sports (esports) festival in Spain, Flow Gamergy, will display its face-to-face event in Argentina for the first time and expect to attract more than 23 thousand fans. As part of the proposal, attendees will enjoy the final phases of several tournaments and the definition of the "Copa Libertadores" of League of Legends (LoL).</p>
+                <iframe class="eventsMain__card__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7674296215077!2d-58.51044038427467!3d-34.559443462664774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb71912ed9b11%3A0xd1365acdaf0067c3!2sTecn%C3%B3polis!5e0!3m2!1ses-419!2sar!4v1665173989536!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="eventsMain__card">
+            <div class="eventsMain__card__titleContainer">
+                <h3 class="eventsMain__card__title1">Argentina Game Show Flow 2022</h3>
+                <h3 class="eventsMain__card__title2">Where?</h3>
+            </div>
+            <div class="eventsMain__card__iFrameContainer">
+                <iframe class="eventsMain__card__video" src="https://www.youtube.com/embed/QaTZYB73DZ8" title="#AGSFLOW2021 | Rewind! | Video Oficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="eventsMain__card__description">AGS is the most important video game and technology festival in Argentina.
+                    It will feature exclusive launches, numerous exhibitors, Esports tournaments, a cosplay contest, live shows, talks and workshops, a space for the national industry, streamers and content creators and much more.</p>
+                <iframe class="eventsMain__card__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.3281428625323!2d-58.39859858427447!3d-34.570562663252524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb569a4bcdd35%3A0x558fa1541e2b1c2a!2sCentro%20Costa%20Salguero!5e0!3m2!1ses-419!2sar!4v1665176156632!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="eventsMain__card">
+            <div class="eventsMain__card__titleContainer">
+                <h3 class="eventsMain__card__title1">FiReLEAGUE Argentina</h3>
+                <h3 class="eventsMain__card__title2">Where?</h3>
+            </div>
+            <div class="eventsMain__card__iFrameContainer">
+                <iframe class="eventsMain__card__video" src="https://www.youtube.com/embed/MKx7uiUMumw" title="WINDINGO A ESPAÑA - 9Z TEAM IMPARABLE | MEJORES JUGADAS DE LA FIRELEAGUE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="eventsMain__card__description">The FiReLEAGUE Argentina of CSGO 2022 will live this week in great definition and will deliver classifications to different tournaments, in addition to 3 million pesos in prizes. The playoffs will be played in person, between August 4 and 7, at the Palermo gaming center.</p>
+                <iframe class="eventsMain__card__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26280.777795910144!2d-58.473557420898445!3d-34.576406399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5974d30fa81%3A0x1eff14b32fc40c3a!2sFiReSPORTS!5e0!3m2!1ses-419!2sar!4v1665177301762!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </Main>
+
+    <div class="gamesLogos">
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/ow.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/cr.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/fifa.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/vt.png" alt="">
+        </div>
+        <div class="gamesLogos__cards">
+            <img class="gamesLogos__img" src="../assets/gamesImg/rs.png" alt="">
+        </div>
+    </div>
+    <footer class="footer">
+        <picture class="footer__logo">
+            <img src="../assets/logo/logo.png" class="footer__logo__img" alt="logo">
+        </picture>
+        <h3 class="footer__title">Queen's Elizabeth Revenge</h3>
+        <div class="footer__ctnFlex">
+                <div class="footer__ctnAutors flex">
+                    <a target="_blank" href="https://github.com/NikolaiKoz"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                    <a class="footer__autors" target="_blank" href="https://github.com/NikolaiKoz">José Vallejos</a>
+                </div>
+                <div class="footer__ctnAutors flex">
+                    <a target="_blank" href="https://github.com/Juan2805"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                    <a class="footer__autors" target="_blank" href="https://github.com/Juan2805">Juan Boujon</a>
+                </div>
+                <div class="footer__ctnAutors flex">
+                    <a target="_blank" href="https://github.com/CesarFerrey"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                    <a target="_blank" class="footer__autors" href="https://github.com/CesarFerrey">Cesar Ferreyra</a>
+                </div>
+                <div class="footer__ctnAutors flex">
+                    <a target="_blank" href="https://github.com/Axfroy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu1Vd1RAjEQ3g0FqO9kAxUIFYgVqBWIFSgViBUIHUgFagVqBWIFcDkKwHfu1tmb5CYeOQ91yMtBZvf7dr/9CcKeD+4ZHxoJrLXnAHDGzD1E7ElAzDxHxDkzvxpjZj8FWUvggO8BoNOQ5RIARkT0FLOLEiRJMkbE21/KNyGiUdVni+CP4AUuIk611jchyTeCNE0HzPziDJ6VUmNmHjLztbv7cN9j950h4oPYAMClu7sI5aoSLJnZuELeGWPG8nuxWBx2u911GFl4V8l6SURdb1sSuKI+BiAzIpLIGk9E1isieihk897WWrnwaYqep1rr10Z0AFitVr08z99jwYUEAnbitSaioud3Pdba0l/mxBjTr2YgGh84wDciGuwKLnYhgfwnoiL4MAMOAPdCEEq0JqKjX2ZQKoCIida62AC1RWbmkTFmsgtJkiQ3iChrxZ+yA+va9FPqgYjjzWYzrc6AR5FZUEpdImI1kO02Fac0TWXQDpRSp3mey8j7tn3OsmzoiQS41WpJW0vXHYZZhvJ8k8gR+FWxzrKs70GYuZzqurnx99X5iS07r2d0O3qg2FJsXHaBc0HiHhbpDilaMfp1BLEstyQKAWSzAoBsShNz9hmI5gAwrFsrjU+mECHiut1uz8MA3P7p1L1kZU126fP/2DRm8B9w8f0C0mANKOWrKcoAAAAASUVORK5CYII="/></a>
+                    <a target="_blank" class="footer__autors" href="https://github.com/Axfroy">Ivan Rodriguez</a>
+                </div>
+        </div>        
+        <hr class="footer__horizontalLine">
+        <div class="footer__about">
+            <p>
+                Thanks you so much ¿
+            </p>
+        </div>
+        <div class="footer__containerFlex"> 
+            <h3 class="footer__subTitle">Follow Us</h3>
+            <div class="footer__ctnIcons flex">
+                <img class="footer__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACLklEQVRIS8VWi1HCQBAlQAHYAJAOsAOtAKlAqECoQKlArEA6kA6gA+kgCQ2YAmDie8wlXi73hRnZmQyf7O3bt9+LWjeS6Ea4rWDgJElGnU5nWBTFkE5HUZSeTqc8juNdCAkvYAH2DMNPeM6ABlnBiQ84kbqcsAIDsAd2rzAyxdNzGZPer/r9/sKmbwQWLL8cDG22mYIJ2O91SlpgAboNZKmznwP8UQfeAGZ4u93uFsUz8ghtDp0NdLNSt91uj5WzZH4PcOpW0gA+HA7veDv3AF3D4EI1mGXZHJVOG7KskfOZERhshyimb1eIYXh/PB4ZwhoLGjYAt+Ak1P+qvcY4gO0MDNYyA9YFHYbjY0PEaqxV4MSnikXB7EpgOPyJ71NHenI4e1fqVMCikhlmp6hhA3CwwxUwDtNjeu4UAN/J+cXZwnkICqj2xWAwWFG3AjYVhc7gfwKnyE/sw8qWbzBegvFbjTEOcAFwROokBJgT78Fgp+oGubjYwyySa4FthTZB5DY1xvwB1j/40G0hDopq26g9LAqTxdPTTK2SCOc2h8h56Kh97NOPnEKXVPUGDk9KL2rAYv+StVUuAG5sqcaS8GmrUGC5mrWMyz9dkygQ2G8tEtx1+wgAZiGxhc6VLIvt6sNNw75u9KQn8A56M9PFz3nL1K1KD2DeNpe6fW3NsRoWEfoX/D/lOwMww7oXtxLtBc8r1KZ+4mhVcyYuAamNoXeOXb187Xtnjq8FMJ3/BSe/ZC5haNaHAAAAAElFTkSuQmCC"/>
+                <img class="footer__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACqklEQVRIS+VW7VXiUBAlQAFaABA6wA6wAqGCxQqUCtQKZCtQK1i2AmMFSwcJNGAK4GPvjfM4w+QlL/rHs2dzTg6HJO/dO3fuzLyo9U1X9E24rX8LOE3TMygVi1r5cDjMPqtc44gBNu50OlcAmOEmsL2WePC73+8/NyERBAbgCIB32GziIoyiKDscDi5Kkhg7MLxbbbfba6iwqiNQCyxR/mKE3HC/37/gfsamud10s9mQ2KNLAYjNB4PBogq8ElgifRVZF7vd7sEHaDder9e3IEkCvK6rpPcCAzSGvH8ICuYPYH7fJG/uG1GKpFsgfAnCiV3vBYZsT/hwhnsBxnMuck4O5c4BiPRMU4Y9hkFgkZjRZmB7QXkJ2u12XxH9CM+n2IgODl4AZ9Rjn+SliJGje+ToTkus80aT9Xq9iyDqh0osQYIvQXaq15SAwTLFBzGiRbAfjQHPaJZbt1C/CxHA2nd8c4Y159qcPuCDzYtxaoJNpk0cLqQLuSVtx9o+ARY3p1ZO5hiSkXkrVJ9WAaeWdbcFLgB8eVQuzWWT2s6k3O0q5MSUXmAsymGGcw97t8kJOCuh3W5PfPUOwiypSW3EkpOSuTQBVSJ8zJb4hpuEisFhU6HMGjRX4eC6XFqXG2WOpaPSEy4nZ7AquR2INJob/J8pYA4P9ueiwXyqgZgFwS4ljudkYt4TV2aqBI8dUCtT1atr82xNZ/+rccohwZpP7DclYNerdUkxqqYNQyLlwYGTrXIm+3q1m6cJFr6hTK7wG8up46dvvsrkGmGQPMogyaXXNz8IuLoz0tA0+pxF6YpTCAjFJKbes6XOQ+PT16uL1ohrxYhx1FlyE8nbDzynkexhjyTYyV4Ayu9LR6PaHKtja1a3mCWHjXg7gNrvfWYMnjJDDv7q+/8P+C9AWbYuNuI16wAAAABJRU5ErkJggg=="/>
+                <img class="footer__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB+0lEQVRIS+1W23HCQAzEQAFUgKGC0EGggoQOoIJABYEKQiqADuJUgDuAVGAeBcQFwJBdRp74IXNnkwk/3Axjz1mn1UorHU7lRsu5EW7lDvxvmb861UEQNKrV6shxnEdE3cHPP51OX67rTiIWsOnifd1ut8NoLwO82+3mzWZzaEOdoPV6fQkgAiYWAllj38ezi2cIn724QQIYjjq1Wm3FqNOGWiAI8gP7z5eClACmtIFPT2W83W6Zsjd+5IHD4TBEetaa41iQpuRsaHA8HnvwdX4/+4+fYurA+DvlaYZIx2nvYDvA3tyEiu+hgCYIaDUmcENx6MHBO/bPIkF2JsjKqwWwGngGmAoE66XJodQuIyrlnBlYasy24LooGlNgse9DlGqRtk/X2IptAVCa9uNqVsXFzf1+v9L6siBYZE5hQRK/gyMXGDVuSS9rAiuK74FtXzukjkwBp2LZMqWXtJFvDcxWwfx9QspbOFSW+cXpl8eYgyS4ApS17aO2KltmIPd2kpHIWUzWRZfau3EnxmtRRuMDDo0s0RdgO9aUbA0sszsSmU2tZwCdmkAzqZb0tigqudi7lnUOcWaKy39mmZXM7cT7+KVAG/EfhS+p3diC5oqLfYx2GoC1K+KK2irEHtkR5BOAnk1arfu4SORlbY2qLuvYdO4ObMrQn33/AdkQ2B/O0kPCAAAAAElFTkSuQmCC"/>
+                <img class="footer__icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACnklEQVRIS+VWi1HbQBBFtguAAvyrIKYCTAXYHcQVBFcQUgFQAe4Ad4CpAFOB/CkgKsCfvKfZJXu6k3UeT4bMoBmNdKe7ffv283TJ2SddySfhnv3fwGmaniMyemuQONYrk5es2+0uYqJYyphgtVrtFvfNfr/vCHCMTa6Z4l60Wq1x2YYgMEB7jUbjCYA9ZZIkSc4Ec8rOsYnv5/jGKNDJ/MLcfLPZjBGFWdEBD5hMAfoioLPtdkuvF9gcBAwxgo0+bNyLjQzMLyqBl8vlHTz9yXBhwzA2trpO64G5Xq/XbwI+ga2RteUxXq1Wz1gwANNLbJ4fAwzQTr1ef2M9YH+XTxl7rEPAvwkWCg/nmX8UXB9R+UbDYPS+2+0mZEi2AMr3A/gaj7kZX9h0OcDiccqiaDabl0W2SMOtpMG2Ur4MDvxqt9t3dIxjjRYimGLYKUawCNyT0MzAmB5/XAJ6LxNTMpVKv8LcdwEfA/zB7tM8MwK2uqOAbe5gdASnJtY4qxgOv0iIYf+viIAx5/u4h9jH/s6vIrAacBgbtqWVDoAnMteQK8BJwFrpIbYGYIB3doTj3KnAysbL4T8FjhEVs+bBanQs42BVa5sJO6+4YJxhZlTYv0NbvScB06BhxCGr+hU39Vvbib3tsOVCBa5qp1x5DgiI6rimVp8Zq1kUzPmZGAEp72PxcE8mFZI5gHNkSsV6BeC0TNcBTHtMgdPfnlYbpXEWFinGjCmfVMJQBD1gk0tPNmPA7BpTWJ7wBA8CotcdFhFC9HjM71H+x2T6A/tZ7ZmE2cl92dGH0sn2ILheM3kJnUTyv5Ucf7hH/15cy/b70Gg1dvB4K/rbLzgQE3ECzsF0VHbqjD5Xi0gcBAUQAXk+W1R5Fw1cZejY718P+A9pA8UuVWRauwAAAABJRU5ErkJggg=="/>
+            </div> 
+        </div>
+    </footer>
+</body>
+</html>
