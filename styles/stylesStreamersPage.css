@@ -3,10 +3,11 @@
 .mainStreamers{
     display: grid;
     grid-template-rows:1fr 2fr;
-    width: 100%;
+    width: 1440px;
     background-color: var(--light-gray-blue);
     text-align: center;
     padding-bottom: 80px;
+    margin: 0 auto;
 }
 
 .img_stream{
