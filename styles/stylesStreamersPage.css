@@ -3,7 +3,7 @@
 .mainStreamers{
     display: grid;
     grid-template-rows:1fr 2fr;
-    width: 1440px;
+    max-width: 1440px;
     background-color: var(--light-gray-blue);
     text-align: center;
     padding-bottom: 80px;
@@ -89,10 +89,14 @@
 }
 
 .button_plataforms{
-    /* background-color: rgb(66, 73, 129); */
+    background-color: var(--ligth-blue);
     border-radius: 5px;
     margin: 5px;
+    padding: .5em;
+    color: white;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .description_plataforms:hover{

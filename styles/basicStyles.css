@@ -529,3 +529,7 @@ table {
     width: 1.5rem;
     margin: 10px 5px;
 }
+
+.footer__about__content {
+    text-align: center;
+}
