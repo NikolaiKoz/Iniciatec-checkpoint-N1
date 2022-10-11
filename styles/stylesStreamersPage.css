@@ -82,9 +82,19 @@
     width: 400px;
 }
 .button_plataforms{
-    background-color: rgb(179, 165, 165);
+    background-color: rgb(66, 73, 129);
     border-radius: 5px;
     margin: 5px;
+}
+.containerStream:hover{
+    transition: all ease-in-out 0.5s;
+    transform: scale(1.05);
+    box-shadow:
+    0px 0px 5px var(--ligth-blue),
+    0px 0px 8px var(--ligth-blue),
+    0px 0px 11px var(--ligth-blue),
+    0px 0px 14px var(--ligth-blue),
+    0px 0px 17px var(--ligth-blue);
 }
 /* ---------->> STREAMERS <<---------- */
 .cont_stream{
